@@ -14,7 +14,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 * activity: 6 different activity levels. (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).
 
 ### Measurements
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals. These time domain signals were captured at a constant rate of 50 Hz. The acceleration signal was then separated into body and gravity acceleration signals. The body linear acceleration and angular velocity were derived in time to obtain Jerk signals. The magnitude of these three-dimensional signals were calculated using the Euclidean norm. A Fast Fourier Transform (FFT) was applied to some of these signals producing frequency domain signals.
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals. These time domain signals were captured at a constant rate of 50 Hz. The acceleration signal was then separated into body and gravity acceleration signals. The body linear acceleration and angular velocity were derived in time to obtain Jerk signals. The magnitude of these three-dimensional signals were calculated using the Euclidean norm. A Fast Fourier Transform (FFT) was applied to some of these signals producing frequency domain signals. Features are normalized and bounded within [-1,1].
 
 The variables below are average of each measurement for each activity and each subject. I use lower camel case so that variable names are human readable. I do not separate features (e.g. accelerometer or gyroscope as two levels of measurement instruments) into multiple new features to avoid too many NA values. 
 
