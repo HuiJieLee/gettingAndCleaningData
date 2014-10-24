@@ -14,7 +14,9 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 * activity: 6 different activity levels. (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).
 
 ### Measurements
-These variables are average of each measurement for each activity and each subject. I use lower camel case in order to be human readable.
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals. These time domain signals were captured at a constant rate of 50 Hz. The acceleration signal was then separated into body and gravity acceleration signals. The body linear acceleration and angular velocity were derived in time to obtain Jerk signals. The magnitude of these three-dimensional signals were calculated using the Euclidean norm. A Fast Fourier Transform (FFT) was applied to some of these signals producing frequency domain signals.
+
+The variables below are average of each measurement for each activity and each subject. I use lower camel case in order to be human readable.
 
 * Time domain body accelerometer signals mean on the X, Y, Z axes
     * timeBodyAccelerometerMeanOnAxisX
@@ -183,6 +185,146 @@ Classes ‘data.table’ and 'data.frame':	10299 obs. of  68 variables:
  $ frequencyBodyGyroscopeJerkMagnitudeMean                 : num  -0.992 -0.996 -0.995 -0.995 -0.995 ...
  $ frequencyBodyGyroscopeJerkMagnitudeStandardDeviation    : num  -0.991 -0.996 -0.995 -0.995 -0.995 ...
  - attr(*, ".internal.selfref")=<externalptr> 
+```
+
+## Data summary
+```R
+summary(DT)
+```
+```
+    subject                    activity    timeBodyAccelerometerMeanOnAxisX timeBodyAccelerometerMeanOnAxisY timeBodyAccelerometerMeanOnAxisZ
+ Min.   : 1.00   WALKING           :1722   Min.   :-1.0000                  Min.   :-1.00000                 Min.   :-1.00000                
+ 1st Qu.: 9.00   WALKING_UPSTAIRS  :1544   1st Qu.: 0.2626                  1st Qu.:-0.02490                 1st Qu.:-0.12102                
+ Median :17.00   WALKING_DOWNSTAIRS:1406   Median : 0.2772                  Median :-0.01716                 Median :-0.10860                
+ Mean   :16.15   SITTING           :1777   Mean   : 0.2743                  Mean   :-0.01774                 Mean   :-0.10892                
+ 3rd Qu.:24.00   STANDING          :1906   3rd Qu.: 0.2884                  3rd Qu.:-0.01062                 3rd Qu.:-0.09759                
+ Max.   :30.00   LAYING            :1944   Max.   : 1.0000                  Max.   : 1.00000                 Max.   : 1.00000                
+ timeBodyAccelerometerStandardDeviationOnAxisX timeBodyAccelerometerStandardDeviationOnAxisY timeBodyAccelerometerStandardDeviationOnAxisZ timeGravityAccelerometerMeanOnAxisX
+ Min.   :-1.0000                               Min.   :-1.00000                              Min.   :-1.0000                               Min.   :-1.0000                    
+ 1st Qu.:-0.9924                               1st Qu.:-0.97699                              1st Qu.:-0.9791                               1st Qu.: 0.8117                    
+ Median :-0.9430                               Median :-0.83503                              Median :-0.8508                               Median : 0.9218                    
+ Mean   :-0.6078                               Mean   :-0.51019                              Mean   :-0.6131                               Mean   : 0.6692                    
+ 3rd Qu.:-0.2503                               3rd Qu.:-0.05734                              3rd Qu.:-0.2787                               3rd Qu.: 0.9547                    
+ Max.   : 1.0000                               Max.   : 1.00000                              Max.   : 1.0000                               Max.   : 1.0000                    
+ timeGravityAccelerometerMeanOnAxisY timeGravityAccelerometerMeanOnAxisZ timeGravityAccelerometerStandardDeviationOnAxisX timeGravityAccelerometerStandardDeviationOnAxisY
+ Min.   :-1.000000                   Min.   :-1.00000                    Min.   :-1.0000                                  Min.   :-1.0000                                 
+ 1st Qu.:-0.242943                   1st Qu.:-0.11671                    1st Qu.:-0.9949                                  1st Qu.:-0.9913                                 
+ Median :-0.143551                   Median : 0.03680                    Median :-0.9819                                  Median :-0.9759                                 
+ Mean   : 0.004039                   Mean   : 0.09215                    Mean   :-0.9652                                  Mean   :-0.9544                                 
+ 3rd Qu.: 0.118905                   3rd Qu.: 0.21621                    3rd Qu.:-0.9615                                  3rd Qu.:-0.9464                                 
+ Max.   : 1.000000                   Max.   : 1.00000                    Max.   : 1.0000                                  Max.   : 1.0000                                 
+ timeGravityAccelerometerStandardDeviationOnAxisZ timeBodyAccelerometerJerkMeanOnAxisX timeBodyAccelerometerJerkMeanOnAxisY timeBodyAccelerometerJerkMeanOnAxisZ
+ Min.   :-1.0000                                  Min.   :-1.00000                     Min.   :-1.000000                    Min.   :-1.000000                   
+ 1st Qu.:-0.9866                                  1st Qu.: 0.06298                     1st Qu.:-0.018555                    1st Qu.:-0.031552                   
+ Median :-0.9665                                  Median : 0.07597                     Median : 0.010753                    Median :-0.001159                   
+ Mean   :-0.9389                                  Mean   : 0.07894                     Mean   : 0.007948                    Mean   :-0.004675                   
+ 3rd Qu.:-0.9296                                  3rd Qu.: 0.09131                     3rd Qu.: 0.033538                    3rd Qu.: 0.024578                   
+ Max.   : 1.0000                                  Max.   : 1.00000                     Max.   : 1.000000                    Max.   : 1.000000                   
+ timeBodyAccelerometerJerkStandardDeviationOnAxisX timeBodyAccelerometerJerkStandardDeviationOnAxisY timeBodyAccelerometerJerkStandardDeviationOnAxisZ
+ Min.   :-1.0000                                   Min.   :-1.0000                                   Min.   :-1.0000                                  
+ 1st Qu.:-0.9913                                   1st Qu.:-0.9850                                   1st Qu.:-0.9892                                  
+ Median :-0.9513                                   Median :-0.9250                                   Median :-0.9543                                  
+ Mean   :-0.6398                                   Mean   :-0.6080                                   Mean   :-0.7628                                  
+ 3rd Qu.:-0.2912                                   3rd Qu.:-0.2218                                   3rd Qu.:-0.5485                                  
+ Max.   : 1.0000                                   Max.   : 1.0000                                   Max.   : 1.0000                                  
+ timeBodyGyroscopeMeanOnAxisX timeBodyGyroscopeMeanOnAxisY timeBodyGyroscopeMeanOnAxisZ timeBodyGyroscopeStandardDeviationOnAxisX timeBodyGyroscopeStandardDeviationOnAxisY
+ Min.   :-1.00000             Min.   :-1.00000             Min.   :-1.00000             Min.   :-1.0000                           Min.   :-1.0000                          
+ 1st Qu.:-0.04579             1st Qu.:-0.10399             1st Qu.: 0.06485             1st Qu.:-0.9872                           1st Qu.:-0.9819                          
+ Median :-0.02776             Median :-0.07477             Median : 0.08626             Median :-0.9016                           Median :-0.9106                          
+ Mean   :-0.03098             Mean   :-0.07472             Mean   : 0.08836             Mean   :-0.7212                           Mean   :-0.6827                          
+ 3rd Qu.:-0.01058             3rd Qu.:-0.05110             3rd Qu.: 0.11044             3rd Qu.:-0.4822                           3rd Qu.:-0.4461                          
+ Max.   : 1.00000             Max.   : 1.00000             Max.   : 1.00000             Max.   : 1.0000                           Max.   : 1.0000                          
+ timeBodyGyroscopeStandardDeviationOnAxisZ timeBodyGyroscopeJerkMeanOnAxisX timeBodyGyroscopeJerkMeanOnAxisY timeBodyGyroscopeJerkMeanOnAxisZ
+ Min.   :-1.0000                           Min.   :-1.00000                 Min.   :-1.00000                 Min.   :-1.00000                
+ 1st Qu.:-0.9850                           1st Qu.:-0.11723                 1st Qu.:-0.05868                 1st Qu.:-0.07936                
+ Median :-0.8819                           Median :-0.09824                 Median :-0.04056                 Median :-0.05455                
+ Mean   :-0.6537                           Mean   :-0.09671                 Mean   :-0.04232                 Mean   :-0.05483                
+ 3rd Qu.:-0.3379                           3rd Qu.:-0.07930                 3rd Qu.:-0.02521                 3rd Qu.:-0.03168                
+ Max.   : 1.0000                           Max.   : 1.00000                 Max.   : 1.00000                 Max.   : 1.00000                
+ timeBodyGyroscopeJerkStandardDeviationOnAxisX timeBodyGyroscopeJerkStandardDeviationOnAxisY timeBodyGyroscopeJerkStandardDeviationOnAxisZ timeBodyAccelerometerMagnitudeMean
+ Min.   :-1.0000                               Min.   :-1.0000                               Min.   :-1.0000                               Min.   :-1.0000                   
+ 1st Qu.:-0.9907                               1st Qu.:-0.9922                               1st Qu.:-0.9926                               1st Qu.:-0.9819                   
+ Median :-0.9348                               Median :-0.9548                               Median :-0.9503                               Median :-0.8746                   
+ Mean   :-0.7313                               Mean   :-0.7861                               Mean   :-0.7399                               Mean   :-0.5482                   
+ 3rd Qu.:-0.4865                               3rd Qu.:-0.6268                               3rd Qu.:-0.5097                               3rd Qu.:-0.1201                   
+ Max.   : 1.0000                               Max.   : 1.0000                               Max.   : 1.0000                               Max.   : 1.0000                   
+ timeBodyAccelerometerMagnitudeStandardDeviation timeGravityAccelerometerMagnitudeMean timeGravityAccelerometerMagnitudeStandardDeviation timeBodyAccelerometerJerkMagnitudeMean
+ Min.   :-1.0000                                 Min.   :-1.0000                       Min.   :-1.0000                                    Min.   :-1.0000                       
+ 1st Qu.:-0.9822                                 1st Qu.:-0.9819                       1st Qu.:-0.9822                                    1st Qu.:-0.9896                       
+ Median :-0.8437                                 Median :-0.8746                       Median :-0.8437                                    Median :-0.9481                       
+ Mean   :-0.5912                                 Mean   :-0.5482                       Mean   :-0.5912                                    Mean   :-0.6494                       
+ 3rd Qu.:-0.2423                                 3rd Qu.:-0.1201                       3rd Qu.:-0.2423                                    3rd Qu.:-0.2956                       
+ Max.   : 1.0000                                 Max.   : 1.0000                       Max.   : 1.0000                                    Max.   : 1.0000                       
+ timeBodyAccelerometerJerkMagnitudeStandardDeviation timeBodyGyroscopeMagnitudeMean timeBodyGyroscopeMagnitudeStandardDeviation timeBodyGyroscopeJerkMagnitudeMean
+ Min.   :-1.0000                                     Min.   :-1.0000                Min.   :-1.0000                             Min.   :-1.0000                   
+ 1st Qu.:-0.9907                                     1st Qu.:-0.9781                1st Qu.:-0.9775                             1st Qu.:-0.9923                   
+ Median :-0.9288                                     Median :-0.8223                Median :-0.8259                             Median :-0.9559                   
+ Mean   :-0.6278                                     Mean   :-0.6052                Mean   :-0.6625                             Mean   :-0.7621                   
+ 3rd Qu.:-0.2733                                     3rd Qu.:-0.2454                3rd Qu.:-0.3940                             3rd Qu.:-0.5499                   
+ Max.   : 1.0000                                     Max.   : 1.0000                Max.   : 1.0000                             Max.   : 1.0000                   
+ timeBodyGyroscopeJerkMagnitudeStandardDeviation frequencyBodyAccelerometerMeanOnAxisX frequencyBodyAccelerometerMeanOnAxisY frequencyBodyAccelerometerMeanOnAxisZ
+ Min.   :-1.0000                                 Min.   :-1.0000                       Min.   :-1.0000                       Min.   :-1.0000                      
+ 1st Qu.:-0.9922                                 1st Qu.:-0.9913                       1st Qu.:-0.9792                       1st Qu.:-0.9832                      
+ Median :-0.9403                                 Median :-0.9456                       Median :-0.8643                       Median :-0.8954                      
+ Mean   :-0.7780                                 Mean   :-0.6228                       Mean   :-0.5375                       Mean   :-0.6650                      
+ 3rd Qu.:-0.6093                                 3rd Qu.:-0.2646                       3rd Qu.:-0.1032                       3rd Qu.:-0.3662                      
+ Max.   : 1.0000                                 Max.   : 1.0000                       Max.   : 1.0000                       Max.   : 1.0000                      
+ frequencyBodyAccelerometerStandardDeviationOnAxisX frequencyBodyAccelerometerStandardDeviationOnAxisY frequencyBodyAccelerometerStandardDeviationOnAxisZ
+ Min.   :-1.0000                                    Min.   :-1.00000                                   Min.   :-1.0000                                   
+ 1st Qu.:-0.9929                                    1st Qu.:-0.97689                                   1st Qu.:-0.9780                                   
+ Median :-0.9416                                    Median :-0.83261                                   Median :-0.8398                                   
+ Mean   :-0.6034                                    Mean   :-0.52842                                   Mean   :-0.6179                                   
+ 3rd Qu.:-0.2493                                    3rd Qu.:-0.09216                                   3rd Qu.:-0.3023                                   
+ Max.   : 1.0000                                    Max.   : 1.00000                                   Max.   : 1.0000                                   
+ frequencyBodyAccelerometerJerkMeanOnAxisX frequencyBodyAccelerometerJerkMeanOnAxisY frequencyBodyAccelerometerJerkMeanOnAxisZ
+ Min.   :-1.0000                           Min.   :-1.0000                           Min.   :-1.0000                          
+ 1st Qu.:-0.9912                           1st Qu.:-0.9848                           1st Qu.:-0.9873                          
+ Median :-0.9516                           Median :-0.9257                           Median :-0.9475                          
+ Mean   :-0.6567                           Mean   :-0.6290                           Mean   :-0.7436                          
+ 3rd Qu.:-0.3270                           3rd Qu.:-0.2638                           3rd Qu.:-0.5133                          
+ Max.   : 1.0000                           Max.   : 1.0000                           Max.   : 1.0000                          
+ frequencyBodyAccelerometerJerkStandardDeviationOnAxisX frequencyBodyAccelerometerJerkStandardDeviationOnAxisY frequencyBodyAccelerometerJerkStandardDeviationOnAxisZ
+ Min.   :-1.0000                                        Min.   :-1.0000                                        Min.   :-1.0000                                       
+ 1st Qu.:-0.9920                                        1st Qu.:-0.9865                                        1st Qu.:-0.9895                                       
+ Median :-0.9562                                        Median :-0.9280                                        Median :-0.9590                                       
+ Mean   :-0.6550                                        Mean   :-0.6122                                        Mean   :-0.7809                                       
+ 3rd Qu.:-0.3203                                        3rd Qu.:-0.2361                                        3rd Qu.:-0.5903                                       
+ Max.   : 1.0000                                        Max.   : 1.0000                                        Max.   : 1.0000                                       
+ frequencyBodyGyroscopeMeanOnAxisX frequencyBodyGyroscopeMeanOnAxisY frequencyBodyGyroscopeMeanOnAxisZ frequencyBodyGyroscopeStandardDeviationOnAxisX
+ Min.   :-1.0000                   Min.   :-1.0000                   Min.   :-1.0000                   Min.   :-1.0000                               
+ 1st Qu.:-0.9853                   1st Qu.:-0.9847                   1st Qu.:-0.9851                   1st Qu.:-0.9881                               
+ Median :-0.8917                   Median :-0.9197                   Median :-0.8877                   Median :-0.9053                               
+ Mean   :-0.6721                   Mean   :-0.7062                   Mean   :-0.6442                   Mean   :-0.7386                               
+ 3rd Qu.:-0.3837                   3rd Qu.:-0.4735                   3rd Qu.:-0.3225                   3rd Qu.:-0.5225                               
+ Max.   : 1.0000                   Max.   : 1.0000                   Max.   : 1.0000                   Max.   : 1.0000                               
+ frequencyBodyGyroscopeStandardDeviationOnAxisY frequencyBodyGyroscopeStandardDeviationOnAxisZ frequencyBodyAccelerometerMagnitudeMean
+ Min.   :-1.0000                                Min.   :-1.0000                                Min.   :-1.0000                        
+ 1st Qu.:-0.9808                                1st Qu.:-0.9862                                1st Qu.:-0.9847                        
+ Median :-0.9061                                Median :-0.8915                                Median :-0.8755                        
+ Mean   :-0.6742                                Mean   :-0.6904                                Mean   :-0.5860                        
+ 3rd Qu.:-0.4385                                3rd Qu.:-0.4168                                3rd Qu.:-0.2173                        
+ Max.   : 1.0000                                Max.   : 1.0000                                Max.   : 1.0000                        
+ frequencyBodyAccelerometerMagnitudeStandardDeviation frequencyBodyAccelerometerJerkMagnitudeMean frequencyBodyAccelerometerJerkMagnitudeStandardDeviation
+ Min.   :-1.0000                                      Min.   :-1.0000                             Min.   :-1.0000                                         
+ 1st Qu.:-0.9829                                      1st Qu.:-0.9898                             1st Qu.:-0.9907                                         
+ Median :-0.8547                                      Median :-0.9290                             Median :-0.9255                                         
+ Mean   :-0.6595                                      Mean   :-0.6208                             Mean   :-0.6401                                         
+ 3rd Qu.:-0.3823                                      3rd Qu.:-0.2600                             3rd Qu.:-0.3082                                         
+ Max.   : 1.0000                                      Max.   : 1.0000                             Max.   : 1.0000                                         
+ frequencyBodyGyroscopeMagnitudeMean frequencyBodyGyroscopeMagnitudeStandardDeviation frequencyBodyGyroscopeJerkMagnitudeMean
+ Min.   :-1.0000                     Min.   :-1.0000                                  Min.   :-1.0000                        
+ 1st Qu.:-0.9825                     1st Qu.:-0.9781                                  1st Qu.:-0.9921                        
+ Median :-0.8756                     Median :-0.8275                                  Median :-0.9453                        
+ Mean   :-0.6974                     Mean   :-0.7000                                  Mean   :-0.7798                        
+ 3rd Qu.:-0.4514                     3rd Qu.:-0.4713                                  3rd Qu.:-0.6122                        
+ Max.   : 1.0000                     Max.   : 1.0000                                  Max.   : 1.0000                        
+ frequencyBodyGyroscopeJerkMagnitudeStandardDeviation
+ Min.   :-1.0000                                     
+ 1st Qu.:-0.9926                                     
+ Median :-0.9382                                     
+ Mean   :-0.7922                                     
+ 3rd Qu.:-0.6437                                     
+ Max.   : 1.0000                                     
 ```
 
 ## Transformation of the raw data 
