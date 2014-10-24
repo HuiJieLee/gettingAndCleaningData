@@ -29,84 +29,84 @@ These variables are average of each measurement for each activity and each subje
     * timeGravityAccelerometerMeanOnAxisY
     * timeGravityAccelerometerMeanOnAxisZ
 * Time domain body accelerometer signals standard deviation on the X, Y, Z axes
-..* timeGravityAccelerometerStandardDeviationOnAxisX
-..* timeGravityAccelerometerStandardDeviationOnAxisY
-..* timeGravityAccelerometerStandardDeviationOnAxisZ
+    * timeGravityAccelerometerStandardDeviationOnAxisX
+    * timeGravityAccelerometerStandardDeviationOnAxisY
+    * timeGravityAccelerometerStandardDeviationOnAxisZ
 * Time domain body accelerometer Jerk signals mean on the X, Y, Z axes
-..* timeBodyAccelerometerJerkMeanOnAxisX
-..* timeBodyAccelerometerJerkMeanOnAxisY
-..* timeBodyAccelerometerJerkMeanOnAxisZ
+    * timeBodyAccelerometerJerkMeanOnAxisX
+    * timeBodyAccelerometerJerkMeanOnAxisY
+    * timeBodyAccelerometerJerkMeanOnAxisZ
 * Time domain body accelerometer Jerk signals standard deviation on the X, Y, Z axes
-..* timeBodyAccelerometerJerkStandardDeviationOnAxisX
-..* timeBodyAccelerometerJerkStandardDeviationOnAxisY
-..* timeBodyAccelerometerJerkStandardDeviationOnAxisZ
+    * timeBodyAccelerometerJerkStandardDeviationOnAxisX
+    * timeBodyAccelerometerJerkStandardDeviationOnAxisY
+    * timeBodyAccelerometerJerkStandardDeviationOnAxisZ
 * Time domain body gyroscope signals mean on the X, Y, Z axes
-..* timeBodyGyroscopeMeanOnAxisX
-..* timeBodyGyroscopeMeanOnAxisY
-..* timeBodyGyroscopeMeanOnAxisZ
+    * timeBodyGyroscopeMeanOnAxisX
+    * timeBodyGyroscopeMeanOnAxisY
+    * timeBodyGyroscopeMeanOnAxisZ
 * Time domain body gyroscope signals standard deviation on the X, Y, Z axes
-..* timeBodyGyroscopeStandardDeviationOnAxisX
-..* timeBodyGyroscopeStandardDeviationOnAxisY
-..* timeBodyGyroscopeStandardDeviationOnAxisZ
+    * timeBodyGyroscopeStandardDeviationOnAxisX
+    * timeBodyGyroscopeStandardDeviationOnAxisY
+    * timeBodyGyroscopeStandardDeviationOnAxisZ
 * Time domain body gyroscope Jerk signals mean on the X, Y, Z axes
-..* timeBodyGyroscopeJerkMeanOnAxisX
-..* timeBodyGyroscopeJerkMeanOnAxisY
-..* timeBodyGyroscopeJerkMeanOnAxisZ
+    * timeBodyGyroscopeJerkMeanOnAxisX
+    * timeBodyGyroscopeJerkMeanOnAxisY
+    * timeBodyGyroscopeJerkMeanOnAxisZ
 * Time domain body gyroscope Jerk signals standard deviation on the X, Y, Z axes
-..* timeBodyGyroscopeJerkStandardDeviationOnAxisX
-..* timeBodyGyroscopeJerkStandardDeviationOnAxisY
-..* timeBodyGyroscopeJerkStandardDeviationOnAxisZ
+    * timeBodyGyroscopeJerkStandardDeviationOnAxisX
+    * timeBodyGyroscopeJerkStandardDeviationOnAxisY
+    * timeBodyGyroscopeJerkStandardDeviationOnAxisZ
 * Time domain body accelerometer signal magnitude mean and standard deviation
-..* timeBodyAccelerometerMagnitudeMean
-..* timeBodyAccelerometerMagnitudeStandardDeviation
+    * timeBodyAccelerometerMagnitudeMean
+    * timeBodyAccelerometerMagnitudeStandardDeviation
 * Time domain gravity accelerometer signal magnitude mean and standard deviation
-..* timeBodyGravityMagnitudeMean
-..* timeBodyGravityMagnitudeStandardDeviation
+    * timeBodyGravityMagnitudeMean
+    * timeBodyGravityMagnitudeStandardDeviation
 * Time domain body accelerometer Jerk signal magnitude mean and standard deviation
-..* timeBodyAccelerometerJerkMagnitudeMean
-..* timeBodyAccelerometerJerkMagnitudeStandardDeviation
+    * timeBodyAccelerometerJerkMagnitudeMean
+    * timeBodyAccelerometerJerkMagnitudeStandardDeviation
 * Time domain body gyroscope signal magnitude mean and standard deviation
-..* timeBodyGyroscopeMagnitudeMean
-..* timeBodyGyroscopeMagnitudeStandardDeviation
+    * timeBodyGyroscopeMagnitudeMean
+    * timeBodyGyroscopeMagnitudeStandardDeviation
 * Time domain body gyroscope Jerk signal magnitude mean and standard deviation
-..* timeBodyGyroscopeJerkMagnitudeMean
-..* timeBodyGyroscopeJerkMagnitudeStandardDeviation
+    * timeBodyGyroscopeJerkMagnitudeMean
+    * timeBodyGyroscopeJerkMagnitudeStandardDeviation
 * Frequency domain body accelerometer signals mean on the X, Y, Z axes
-..* frequencyBodyAccelerometerMeanOnAxisX
-..* frequencyBodyAccelerometerMeanOnAxisY
-..* frequencyBodyAccelerometerMeanOnAxisZ
+    * frequencyBodyAccelerometerMeanOnAxisX
+    * frequencyBodyAccelerometerMeanOnAxisY
+    * frequencyBodyAccelerometerMeanOnAxisZ
 * Frequency domain body accelerometer signals standard deviation on the X, Y, Z axes
-..* frequencyBodyAccelerometerStandardDeviationOnAxisX
-..* frequencyBodyAccelerometerStandardDeviationOnAxisY
-..* frequencyBodyAccelerometerStandardDeviationOnAxisZ
+    * frequencyBodyAccelerometerStandardDeviationOnAxisX
+    * frequencyBodyAccelerometerStandardDeviationOnAxisY
+    * frequencyBodyAccelerometerStandardDeviationOnAxisZ
 * Frequency domain body accelerometer Jerk signals mean on the X, Y, Z axes
-..* frequencyBodyAccelerometerJerkMeanOnAxisX
-..* frequencyBodyAccelerometerJerkMeanOnAxisY
-..* frequencyBodyAccelerometerJerkMeanOnAxisZ
+    * frequencyBodyAccelerometerJerkMeanOnAxisX
+    * frequencyBodyAccelerometerJerkMeanOnAxisY
+    * frequencyBodyAccelerometerJerkMeanOnAxisZ
 * Frequency domain body accelerometer Jerksignals standard deviation on the X, Y, Z axes
-..* frequencyBodyAccelerometerJerkStandardDeviationOnAxisX
-..* frequencyBodyAccelerometerJerkStandardDeviationOnAxisY
-..* frequencyBodyAccelerometerJerkStandardDeviationOnAxisZ
+    * frequencyBodyAccelerometerJerkStandardDeviationOnAxisX
+    * frequencyBodyAccelerometerJerkStandardDeviationOnAxisY
+    * frequencyBodyAccelerometerJerkStandardDeviationOnAxisZ
 * Frequency domain body gyroscope signals mean on the X, Y, Z axes
-..* frequencyBodyGyroscopeMeanOnAxisX
-..* frequencyBodyGyroscopeMeanOnAxisY
-..* frequencyBodyGyroscopeMeanOnAxisZ
+    * frequencyBodyGyroscopeMeanOnAxisX
+    * frequencyBodyGyroscopeMeanOnAxisY
+    * frequencyBodyGyroscopeMeanOnAxisZ
 * Frequency domain body gyroscope signals standard deviation on the X, Y, Z axes
-..* frequencyBodyGyroscopeStandardDeviationOnAxisX
-..* frequencyBodyGyroscopeStandardDeviationOnAxisY
-..* frequencyBodyGyroscopeStandardDeviationOnAxisZ
+    * frequencyBodyGyroscopeStandardDeviationOnAxisX
+    * frequencyBodyGyroscopeStandardDeviationOnAxisY
+    * frequencyBodyGyroscopeStandardDeviationOnAxisZ
 * Frequency domain body accelerometer signal magnitude mean and standard deviation
-..* frequencyBodyAccelerometerMagnitudeMean
-..* frequencyBodyAccelerometerMagnitudeStandardDeviation
+    * frequencyBodyAccelerometerMagnitudeMean
+    * frequencyBodyAccelerometerMagnitudeStandardDeviation
 * Frequency domain body accelerometer Jerk signal magnitude mean and standard deviation
-..* frequencyBodyAccelerometerJerkMagnitudeMean
-..* frequencyBodyAccelerometerJerkMagnitudeStandardDeviation
+    * frequencyBodyAccelerometerJerkMagnitudeMean
+    * frequencyBodyAccelerometerJerkMagnitudeStandardDeviation
 * Frequency domain body gyroscope signal magnitude mean and standard deviation
-..* frequencyBodyGyroscopeMagnitudeMean
-..* frequencyBodyGyroscopeMagnitudeStandardDeviation
+    * frequencyBodyGyroscopeMagnitudeMean
+    * frequencyBodyGyroscopeMagnitudeStandardDeviation
 * Frequency domain body gyroscope Jerk signal magnitude mean and standard deviation
-..* frequencyBodyGyroscopeJerkMagnitudeMean
-..* frequencyBodyGyroscopeJerkMagnitudeStandardDeviation
+    * frequencyBodyGyroscopeJerkMagnitudeMean
+    * frequencyBodyGyroscopeJerkMagnitudeStandardDeviation
 
 ## Data structure
 ```R
