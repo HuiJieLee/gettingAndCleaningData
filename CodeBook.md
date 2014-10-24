@@ -17,17 +17,17 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 These variables are average of each measurement for each activity and each subject. I use lower camel case in order to be human readable.
 
 * Time domain body accelerometer signals mean on the X, Y, Z axes
-....* timeBodyAccelerometerMeanOnAxisX
-....* timeBodyAccelerometerMeanOnAxisY
-….* timeBodyAccelerometerMeanOnAxisZ
+    * timeBodyAccelerometerMeanOnAxisX
+    * timeBodyAccelerometerMeanOnAxisY
+    * timeBodyAccelerometerMeanOnAxisZ
 * Time domain body accelerometer signals standard deviation on the X, Y, Z axes
-..* timeBodyAccelerometerStandardDeviationOnAxisX
-..* timeBodyAccelerometerStandardDeviationOnAxisY
-..* timeBodyAccelerometerStandardDeviationOnAxisZ
+    * timeBodyAccelerometerStandardDeviationOnAxisX
+    * timeBodyAccelerometerStandardDeviationOnAxisY
+    * timeBodyAccelerometerStandardDeviationOnAxisZ
 * Time domain gravity accelerometer signals mean on the X, Y, Z axes
-..* timeGravityAccelerometerMeanOnAxisX
-..* timeGravityAccelerometerMeanOnAxisY
-..* timeGravityAccelerometerMeanOnAxisZ
+    * timeGravityAccelerometerMeanOnAxisX
+    * timeGravityAccelerometerMeanOnAxisY
+    * timeGravityAccelerometerMeanOnAxisZ
 * Time domain body accelerometer signals standard deviation on the X, Y, Z axes
 ..* timeGravityAccelerometerStandardDeviationOnAxisX
 ..* timeGravityAccelerometerStandardDeviationOnAxisY
