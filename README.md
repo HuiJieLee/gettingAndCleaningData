@@ -20,10 +20,10 @@ Here are the data for the project:
 [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ## Files in this repository
-* README.md: describe how to run the R script.
-* CodeBook.md: describe the variables, the data, and any transformation of the raw data performed.
-* run_analysis.R: R script to produce the tidy data set.
-* tidyData.txt: tidy data set created.
+* **README.md**: describe how to run the R script.
+* **CodeBook.md**: describe the variables, the data, and any transformation of the raw data performed.
+* **run_analysis.R**: R script to produce the tidy data set.
+* **tidyData.txt**: tidy data set created.
 
 ## Instructions on running the R script.
 1. Open `run_analysis.R` with a text editor and modify `Line 6` so that the current working directory is the folder where this script saved. 
